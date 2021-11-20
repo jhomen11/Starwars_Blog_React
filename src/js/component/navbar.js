@@ -6,6 +6,8 @@ export const Navbar = () => {
 		<nav>
 			<Link to={`/`}>Home</Link>
 			<Link to={`/characters`}>Characters</Link>
+			<Link to={`/planets`}>Planets</Link>
+			<Link to={`/vehicles`}>Vehicles</Link>
 		</nav>
 	);
 };
