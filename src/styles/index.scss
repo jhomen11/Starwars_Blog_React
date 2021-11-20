@@ -1,3 +1,36 @@
-/* 
-    General Styles
-*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    
+}
+nav{
+    background-color: black;
+    opacity: .6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.items{
+    color: #FBDF2A;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 5px;
+}
+.logo{
+    margin-top: 15px;
+    width: 100px;
+    height: 60px;
+}
+.logo_imagen{
+    width: 100%;
+}
