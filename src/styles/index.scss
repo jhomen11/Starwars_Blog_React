@@ -23,7 +23,7 @@ nav{
 h1{
     color: #ffdd01;
     letter-spacing: .4em;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -93,5 +93,18 @@ h1{
         color: #FBDF2A;
         font-weight: 500;
         text-decoration: none;
+    }
+}
+footer{
+    background-color: black;
+    opacity: .7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+
+    p{
+        color: #FBDF2A;
+        padding-top: 15px;
     }
 }
