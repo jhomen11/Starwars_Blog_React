@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
+import "../styles/index.scss";
 
 import { Home } from "./views/home";
 
@@ -20,7 +21,7 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div>
+		<div className="main">
 			<BrowserRouter basename={basename}>
 				<Navbar />
 				<Switch>

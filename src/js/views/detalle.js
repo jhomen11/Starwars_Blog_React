@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
 import { useParams, Link } from "react-router-dom";
+import "../../styles/detalle.scss";
 
 const Detalle = () => {
 	const { store, actions } = useContext(Context);
@@ -10,7 +11,6 @@ const Detalle = () => {
 	useEffect(() => {
 		actions.verDetalle(id);
 	}, []);
-	console.log(store.detallePersonaje);
 
 	return (
 		<>

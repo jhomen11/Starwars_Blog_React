@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 export const Footer = () => (
-	<footer>
+	<div className="footer">
 		<p>&#169; Jhonny Mendoza. 2021</p>
-	</footer>
+	</div>
 );
