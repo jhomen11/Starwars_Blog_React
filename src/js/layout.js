@@ -20,32 +20,30 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div className="main">
+		<div>
 			<BrowserRouter basename={basename}>
-				<ScrollToTop>
-					<Navbar />
-					<Switch>
-						<Route exact path="/">
-							<Home />
-						</Route>
-						<Route exact path="/detalle/:id">
-							<Detalle />
-						</Route>
-						<Route exact path="/characters">
-							<Characters />
-						</Route>
-						<Route exact path="/planets">
-							<Planets />
-						</Route>
-						<Route exact path="/vehicles">
-							<Vehicles />
-						</Route>
-						<Route>
-							<h1>Not found!</h1>
-						</Route>
-					</Switch>
-					<Footer />
-				</ScrollToTop>
+				<Navbar />
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route exact path="/detalle/:id">
+						<Detalle />
+					</Route>
+					<Route exact path="/characters">
+						<Characters />
+					</Route>
+					<Route exact path="/planets">
+						<Planets />
+					</Route>
+					<Route exact path="/vehicles">
+						<Vehicles />
+					</Route>
+					<Route>
+						<h1>Not found!</h1>
+					</Route>
+				</Switch>
+				<Footer />
 			</BrowserRouter>
 		</div>
 	);

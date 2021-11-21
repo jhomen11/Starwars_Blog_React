@@ -7,7 +7,7 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="container home">
+		<div className="container_home">
 			<h1>Start Wars Blog</h1>
 			<div className="card_home">
 				<div className="card_item">

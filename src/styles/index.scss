@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: "STARWARS";
+    src: url("STARWARS.ttf");
+}
 body{
     
     background-image: url(../img/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
+    font-family: "STARWARS";
     
     
 }
@@ -22,7 +26,8 @@ nav{
 }
 h1{
     color: #ffdd01;
-    letter-spacing: .4em;
+    font-size: 50px;
+    letter-spacing: .3em;
     margin: 10px 0;
     text-align: center;
 }
@@ -31,7 +36,7 @@ h1{
 .items{
     color: #FBDF2A;
     font-size: 20px;
-    font-weight: 600;
+    letter-spacing: .1em;
     margin-right: 20px;
     text-decoration: none;
     padding: 5px;
@@ -43,6 +48,9 @@ h1{
 }
 .logo_imagen{
     width: 100%;
+}
+.container_home{
+    height: 100vh;
 }
 .card_home{
     width: 100%;
@@ -77,7 +85,7 @@ h1{
     h3{
         color: #FBDF2A;
         margin: 20px;
-        font-weight: 400;
+        letter-spacing: .1em;
         text-transform: uppercase;
     }
     p{
@@ -99,10 +107,12 @@ h1{
 footer{
     background-color: black;
     opacity: .7;
+    bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 60px;
+    width: 100%;
 
     p{
         color: #FBDF2A;
