@@ -22,6 +22,9 @@ export const Navbar = () => {
 					<Link className="items" to={`/vehicles`}>
 						Vehicles
 					</Link>
+					<Link className="items" to={`/pruebaUrl`}>
+						Prueba
+					</Link>
 				</div>
 			</nav>
 		</header>

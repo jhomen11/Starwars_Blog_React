@@ -21,15 +21,15 @@ export const Home = () => {
 				<div className="card_item">
 					<img src={require("../../img/banner_2.jpg")} />
 					<h3>Planets</h3>
-					<p>the characters of the star wars saga</p>
-					<Link className="card_botton" to={`/characters`}>
+					<p>the planets of the star wars saga</p>
+					<Link className="card_botton" to={`/planets`}>
 						Ver mas...
 					</Link>
 				</div>
 				<div className="card_item">
 					<img src={require("../../img/banner_3.jpg")} />
 					<h3>Vehicles</h3>
-					<p>the characters of the star wars saga</p>
+					<p>the vehicles of the star wars saga</p>
 					<Link className="card_botton" to={`/characters`}>
 						Ver mas...
 					</Link>

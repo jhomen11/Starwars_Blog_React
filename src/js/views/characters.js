@@ -14,10 +14,15 @@ export const Characters = () => {
 					return (
 						<div className="card_character_item" key={index}>
 							<img src={require(`../../img/${el.uid}.jpg`)} />
-							<h4>{el.name}</h4>
-							<Link className="card_botton" to={`/detalle/${el.uid}`}>
-								Ver Detalle
-							</Link>
+							<h5>{el.name}</h5>
+							<div className="card_icons">
+								<Link className="card_botton" to={`/detalle/${el.uid}`}>
+									Ver Detalle
+								</Link>
+								<span>
+									<i className="far fa-heart" />
+								</span>
+							</div>
 						</div>
 					);
 				})}

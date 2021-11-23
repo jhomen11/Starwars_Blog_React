@@ -38,7 +38,7 @@ h2{
         height: 180px;
 
     }
-    h4{
+    h5{
         color: #FBDF2A;
         margin: 20px;
         text-transform: uppercase;
@@ -49,13 +49,27 @@ h2{
         letter-spacing: .1em;
         text-transform: capitalize;
     }
-    .card_botton{
-        border: 1px #FBDF2A solid;
-        border-radius: 5px;
+    .card_icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         margin-top: 30px;
-        padding: 8px 20px;
-        color: #FBDF2A;
-        font-weight: 500;
-        text-decoration: none;
     }
+        .card_botton{
+            border: 1px #FBDF2A solid;
+            border-radius: 5px;
+            font-size: 13px;
+            padding: 8px 20px;
+            color: #FBDF2A;
+            text-decoration: none;
+        }
+        i{
+            border: 1px #FBDF2A solid;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 17px;
+            padding: 8px  10px;
+            color: #FBDF2A;
+        }
+        
 }
