@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 *{
     margin: 0;
     padding: 0;
@@ -14,15 +16,20 @@ body{
     background-attachment: fixed;
     font-family: "STARWARS";
 }
+#barra{
+    z-index: 100000;
+}
 
 nav{
     background-color: black;
     opacity: .7;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 25px;
     width: 100%;
     height: 60px;
+    z-index: 9999 !important;
 }
 h1{
     color: #ffdd01;
@@ -48,6 +55,42 @@ h1{
 }
 .logo_imagen{
     width: 100%;
+}
+
+.favoritos{
+    position: relative;
+    
+
+    .favoritos_dropdown{
+       border: 1px #FBDF2A solid;
+       border-radius: 5px;
+       font-size: 16px;
+       letter-spacing: .1em;
+       padding: 8px 20px;
+       color: #FBDF2A;
+       text-decoration: none;
+       
+    }
+     .visible{
+        position: absolute;
+        margin-top: 15px;
+        display: block;
+        background-color: black;
+        
+        
+    }
+    .oculto{
+        display: none;
+    }
+     span{
+        color: #FBDF2A;
+        cursor: pointer;
+     }
+     li{
+        color: #FBDF2A;
+        list-style: none;
+     }
+
 }
 
 .footer{

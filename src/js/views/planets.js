@@ -15,7 +15,7 @@ const Planets = () => {
 							<img src={require(`../../img/planetas/${el.uid}-planeta.jpg`)} />
 							<h5>{el.name}</h5>
 							<div className="card_icons">
-								<Link className="card_botton" to={`/detalle/${el.uid}`}>
+								<Link className="card_botton" to={`/detallePlanets/${el.uid}`}>
 									Ver Detalle
 								</Link>
 								<span>

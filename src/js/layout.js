@@ -12,7 +12,9 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import Detalle from "./views/detalle";
 import Planets from "./views/planets";
-import Vehicles from "./vehicles";
+import Vehicles from "./views/vehicles";
+import DetallePlanets from "./views/detallePlanets";
+import DetalleVehicles from "./views/detalleVehicles";
 
 //create your first component
 const Layout = () => {
@@ -23,13 +25,13 @@ const Layout = () => {
 	return (
 		<div className="main">
 			<BrowserRouter basename={basename}>
-				<Navbar />
+				<div id="barra">
+					<Navbar />
+				</div>
+
 				<Switch>
 					<Route exact path="/">
 						<Home />
-					</Route>
-					<Route exact path="/detalle/:id">
-						<Detalle />
 					</Route>
 					<Route exact path="/characters">
 						<Characters />
@@ -39,6 +41,15 @@ const Layout = () => {
 					</Route>
 					<Route exact path="/vehicles">
 						<Vehicles />
+					</Route>
+					<Route exact path="/detalle/:id">
+						<Detalle />
+					</Route>
+					<Route exact path="/detallePlanets/:id">
+						<DetallePlanets />
+					</Route>
+					<Route exact path="/detalleVehicles/:id">
+						<DetalleVehicles />
 					</Route>
 
 					<Route>

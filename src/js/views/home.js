@@ -30,7 +30,7 @@ export const Home = () => {
 					<img src={require("../../img/banner_3.jpg")} />
 					<h3>Vehicles</h3>
 					<p>the vehicles of the star wars saga</p>
-					<Link className="card_botton" to={`/characters`}>
+					<Link className="card_botton" to={`/vehicles`}>
 						Ver mas...
 					</Link>
 				</div>

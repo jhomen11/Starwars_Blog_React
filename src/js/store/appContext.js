@@ -24,6 +24,7 @@ const injectContext = PassedComponent => {
 		useEffect(() => {
 			state.actions.obtenerApi();
 			state.actions.obtenerApiPlanets();
+			state.actions.obtenerApiStarships();
 		}, []);
 
 		// The initial value for the context is not null anymore, but the current state of this component,

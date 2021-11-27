@@ -3,8 +3,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			personajes: [],
 			planetas: [],
+			starships: [],
 			detallePersonaje: {},
-			detallePlaneta: {}
+			detallePlaneta: {},
+			detalleStarships: {},
+			favoritos: [],
+			mostrarFavoritos: false
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -19,6 +23,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 				await fetch("https://www.swapi.tech/api/planets")
 					.then(response => response.json())
 					.then(data => setStore({ planetas: data.results }))
+					.catch(error => console.log("error"));
+			},
+			obtenerApiStarships: async () => {
+				await fetch("https://www.swapi.tech/api/starships")
+					.then(response => response.json())
+					.then(data => setStore({ starships: data.results }))
 					.catch(error => console.log("error", error));
 			},
 
@@ -41,6 +51,34 @@ const getState = ({ getStore, getActions, setStore }) => {
 						setStore({ detallePlaneta: data.result.properties });
 					})
 					.catch(error => console.log("error", error));
+			},
+			verDetalleStarships: async id => {
+				const store = getStore();
+				await fetch(`https://www.swapi.tech/api/starships/${id}`)
+					.then(response => response.json())
+					//.then(data => console.log(data))
+					.then(data => {
+						setStore({ detalleStarships: data.result.properties });
+					})
+					.catch(error => console.log("error", error));
+			},
+			agregarFavoritos: id => {
+				const store = getStore();
+				setStore({ favoritos: [...store.favoritos, store.personajes[id - 1]] });
+			},
+			eliminarFavoritos: index => {
+				const store = getStore();
+
+				const eliminar = store.favoritos.filter((el, i) => {
+					return index !== i;
+				});
+				console.log(eliminar);
+				setStore({ favoritos: eliminar });
+				console.log(store.favoritos);
+			},
+			setMostrarFavoritos: e => {
+				const store = getStore();
+				setStore({ mostrarFavoritos: !store.mostrarFavoritos });
 			}
 		}
 	};

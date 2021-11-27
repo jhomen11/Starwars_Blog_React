@@ -3,27 +3,22 @@ import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/characters.scss";
 
-export const Characters = () => {
+const Vehicles = () => {
 	const { store, actions } = useContext(Context);
-	//console.log(store.personajes);
-
 	return (
-		<div className="container_character">
-			<h2>Characters</h2>
+		<div>
+			<h2>Vehicles</h2>
 			<div className="card_character">
-				{store.personajes.map((el, index) => {
+				{store.starships.map((el, index) => {
 					return (
 						<div className="card_character_item" key={index}>
-							<img src={require(`../../img/${el.uid}.jpg`)} />
+							<img src={require(`../../img/2-vehicle.jpg`)} />
 							<h5>{el.name}</h5>
 							<div className="card_icons">
-								<Link className="card_botton" to={`/detalle/${el.uid}`}>
+								<Link className="card_botton" to={`/detalleVehicles/${el.uid}`}>
 									Ver Detalle
 								</Link>
-								<span
-									onClick={() => {
-										actions.agregarFavoritos(el.uid);
-									}}>
+								<span>
 									<i className="far fa-heart" />
 								</span>
 							</div>
@@ -34,3 +29,5 @@ export const Characters = () => {
 		</div>
 	);
 };
+
+export default Vehicles;

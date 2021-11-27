@@ -12,8 +12,8 @@
         background-color: #000;
         opacity: .9;
         border-radius: 8px;
-        width: 360px;
-        height: 410px;
+        width: 410px;
+        height: 415px;
         box-shadow: 2px 4px 2px rgba(0, 0, 0, .85);
         overflow: hidden;
         margin: 20px;
@@ -23,7 +23,7 @@
     
     img{
         width: 100%;
-        height: 180px;
+        height: 200px;
 
     }
     h4{
@@ -34,8 +34,9 @@
     }
     p{
         color: #FBDF2A;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         letter-spacing: .1em;
+        padding: 0 10px;
         text-transform: capitalize;
     }
     .card_botton{
