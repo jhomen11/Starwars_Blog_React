@@ -1,8 +1,14 @@
-# WebApp boilerplate with React JS
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
+# Starwars Blog React React JS
+
+[Visualiza Aqui, Starwars Blog React React JS](https://jhomen11.github.io/Starwars_Blog_React/)
+###
+Blog sobre la Saga de Películas de Star Wars realizado utilizando tecnologías como HTML, CSS, JavaScript, React Js
+
 
 <p align="center">
-<a href="https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b"><img src="https://github.com/4GeeksAcademy/react-hello-webapp/blob/master/src/img/how-to.png?raw=true" /></a>
+<img src="src/img/Capture/Captura de Pantalla 2022-01-22 a la(s) 14.57.52.png" width="800px" height="">
+<img src="src/img/Capture/Captura de Pantalla 2022-01-22 a la(s) 15.00.55.png" width="800px" height="">
+<img src="src/img/Capture/Captura de Pantalla 2022-01-22 a la(s) 15.01.59.png" width="800px" height="">
 </p>
 
 
